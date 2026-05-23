@@ -14,7 +14,7 @@ import { Button } from "@components/Button";
 import { FormSwitch } from "@components/FormSwitch";
 import { Heading } from "@components/Heading";
 import { DeleteIcon } from "@components/Icons";
-// import twemoji from "@twemoji/api";
+import twemoji from "@twemoji/api";
 import { sendMessage } from "@utils/discord";
 import { Logger } from "@utils/Logger";
 import { useForceUpdater } from "@utils/react";
@@ -187,8 +187,6 @@ function EmojiInput({ title, emoji, onChange }) {
             e = (e as string).replaceAll(/[^a-z_]/g, "");
             const result = convertNameToSurrogate(e);
 
-            /*
-            TODO: fix twemoji dependency
             const codepoint = twemoji.convert.toCodePoint(result);
             if (result !== undefined && codepoint !== undefined && codepoint.length !== 0) {
                 emoji.name = e;
@@ -202,7 +200,6 @@ function EmojiInput({ title, emoji, onChange }) {
                 emoji.id = "";
                 emoji.preview = "";
             }
-            */
             await onChange(emoji);
             update();
         }}
