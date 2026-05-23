@@ -1,0 +1,51 @@
+.autoresponse-delete-entry {
+    border: 0;
+    min-width: 0;
+    padding: 0 1em;
+    margin-left: 1em;
+}
+
+.autoresponse-template-header {
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.autoresponse-template-collabsible-title {
+    display: flex;
+    align-items: center;
+}
+
+.autoresponse-template-collabsible-button {
+    margin-left: auto;
+    color: var(--text-muted);
+    padding-right: 5px;
+}
+
+.autoresponse-emoji-input-preview {
+    color: white;
+}
+
+.autoresponse-regex-field-container {
+    display: flex;
+}
+
+.autoresponse-regex-field-pattern {
+    flex-grow: 3;
+}
+
+.autoresponse-emoji-field-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.autoresponse-template-params {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.vc-form-switch-wrapper {
+    margin-bottom: 0;
+}
